@@ -1,0 +1,67 @@
+#content {
+	text-align: center;
+	padding-top: 20%;
+	
+}
+body {
+	
+	height: 100%;
+  	margin: 0;
+	
+}
+* {
+  box-sizing: border-box;
+}
+h1  {
+	color: white;
+	font-family: "Corben";
+	font-weight: 800;
+	font-size: 5em;
+	text-shadow: 5px 2px 4px black;
+}
+h4 {
+	font-weight: 500;
+	font-size: 2em;
+	color: white;
+}
+
+hr {
+	border-top-color: white;
+	border-top-width: 1px;
+    border-top-style: solid;
+    width: 25%
+    /*border-top-color: rgb(0, 0, 0, 1);*/
+    opacity: 1;
+}
+html {
+	height: 100%
+}
+.bg-image {
+  /* The image used */
+  background-image: url("i3.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container{
+  /*background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}

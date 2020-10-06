@@ -1,0 +1,36 @@
+body
+{
+ text-align:center;
+ width:100%;
+ margin:0 auto;
+ padding:0px;
+ font-family:helvetica;
+ background-color:#E6E6E6;
+}
+#wrapper
+{
+ text-align:center;
+ margin:0 auto;
+ padding:0px;
+ width:995px;
+}
+#edit_controls
+{
+ background-color:#A4A4A4;
+ float:left;
+ width:500px;
+ margin-left:248px;
+}
+#edit_controls li
+{
+ list-style-type:none;
+ display:inline-block;
+ margin:0px;
+ padding:0px;
+ margin:10px;
+ color:white;
+}
+#image_div img
+{
+ width:500px;	
+}

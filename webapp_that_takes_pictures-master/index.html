@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Web app that takes pictures</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+    <a class="navbar-brand" href="#">
+      Image Editing Bootcamp
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+       <li class="nav-item active">
+          <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Contacts <span class="sr-only">(current)</span></a>
+        </li>
+        
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-toggler-right">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="fas fa-user-plus"></span>
+            Sign Up
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="fas fa-user"></span>
+            Login
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</head>
+<body>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4 text-white">Create Tasks</h1>
+    <p class="lead text-white">Create Brainstorming and creative image editing tasks for students.</p>
+  </div>
+</div>
+<div class="container">
+  <div class="input-group input-group-lg mt-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-lg">Enter Task Name</span>
+    </div>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+  </div>
+  <div class="input-group input-group-lg mt-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-lg">Enter Task Id</span>
+    </div>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+  </div>
+</div>
+<div class="container">
+  <div class="layout">
+  <!--   <div id="newImages"></div> -->
+    
+    <div class="row">
+      <div class="cell">
+        <video id="player" autoplay></video>
+      </div>
+      <div class="cell"></div>
+        <canvas id="canvas" width="320px" height="240px"></canvas>
+      </div>
+    </div>
+
+    <div class="center">
+      <button class="btn btn-primary" id="capture-btn">Capture</button>
+      
+        <button class="btn btn-info" id="save">Save</button>
+        <a href="file:///C:/Users/hp/Desktop/internship/project/webapp_that_takes_pictures-master/edit.html">
+          <button class="btn btn-info" id="retake">Edit</button>
+        </a>
+    </div>
+    
+  
+    <div id="pick-image">
+      <label> If video is not supported. Pick an Image instead</label>
+      <input type="file" accept="image/*" id="image-picker">
+    </div>
+  </div>
+  <div class="container">
+    <button type="button" class="btn btn-primary btn-lg btn-block mt-5">Submit</button>
+  </div>
+  <script src="script.js"></script>
+
+</div>
+</body>
+</html>

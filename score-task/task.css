@@ -1,0 +1,11 @@
+h1 {
+	font-family: 'Spicy Rice', cursive;
+	text-align: center;
+	font-weight: bold;
+}
+body {
+	background-image: url(blur.jpg);
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
